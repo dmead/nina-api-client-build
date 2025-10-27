@@ -6666,12 +6666,15 @@
                         "content": {
                             "application/json": {
                                 "schema": {
-                                    "type": "array",
+                                    "type": "object",
                                     "properties": {
                                         "Response": {
                                             "type": "array",
                                             "format": "string",
-                                            "example": [
+					    "items": {
+						"type": "string"
+					    },
+					    "example": [
                                                 "Advanced API",
                                                 "Livestack",
                                                 "Three Point Polar Alignment",
