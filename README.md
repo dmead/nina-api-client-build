@@ -1,4 +1,4 @@
-This project builds a pythona api client for the nina advanced api
+This project builds a python api client for the nina advanced api
 
 Use case:
 
