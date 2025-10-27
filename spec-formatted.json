@@ -6666,7 +6666,7 @@
                         "content": {
                             "application/json": {
                                 "schema": {
-                                    "type": "object",
+                                    "type": "array",
                                     "properties": {
                                         "Response": {
                                             "type": "array",
@@ -7779,14 +7779,21 @@
                             "image/png": {
                                 "schema": {
                                     "description": "Image in png format, when stream is set to true and the image quality is not specified or set to -1",
-                                    "type": "array",
+                                    "type": "string",
                                     "format": "binary"
                                 }
                             },
                             "image/jpg": {
                                 "schema": {
                                     "description": "Image in jpg format, when stream is set to true and the image quality is specified",
-                                    "type": "array",
+                                    "type": "string",
+                                    "format": "binary"
+                                }
+                            },
+                            "application/octet-stream": {
+                                "schema": {
+                                    "description": "Image in jpg format, when stream is set to true and the image quality is specified",
+                                    "type": "string",
                                     "format": "binary"
                                 }
                             }
@@ -8080,10 +8087,17 @@
                     "200": {
                         "description": "Successful response",
                         "content": {
-                            "image/jpg": {
+                            "image/jpeg": {
                                 "schema": {
                                     "description": "Image in jpg format, when stream is set to true and the image quality is specified",
-                                    "type": "array",
+                                    "type": "string",
+                                    "format": "binary"
+                                }
+                            },
+                            "application/octet-stream": {
+                                "schema": {
+                                    "description": "Image in jpg format, when stream is set to true and the image quality is specified",
+                                    "type": "string",
                                     "format": "binary"
                                 }
                             }
