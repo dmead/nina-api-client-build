@@ -19,7 +19,7 @@ clean:
 	rm -rf $(VENV)
 	@echo "Virtual environment removed"
 
-spec:
+download-spec:
 	curl https://bump.sh/christian-photo/doc/advanced-api.json > nina-spec.json
 
 build:
