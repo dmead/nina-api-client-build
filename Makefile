@@ -1,5 +1,5 @@
 PYTHON := python3
-VENV := nina-api
+VENV := nina-api-env
 
 
 $(VENV)/bin/activate:
